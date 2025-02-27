@@ -84,7 +84,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`fixed top-5 right-0 left-0 px-0 sm:px-5 m-auto w-full sm:w-fit bg-transparent z-[+9999999] ${
+      className={`fixed top-3 right-0 left-0 px-0 sm:px-5 m-auto w-full sm:w-fit bg-transparent z-[+9999999] ${
         scrolling ? "hidden" : "block"
       }`}
     >

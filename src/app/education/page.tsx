@@ -30,11 +30,11 @@ const educationPage = () => {
             delay={0.35}
             className="relative w-3/4 border-l-4 border-l-[#3c3c3c] p-4 gap-3 education_point "
           >
-            <div className="text-2xl font-rubik max-sm:text-xl">
+            <div className="text-4xl font-rubik max-sm:text-xl">
               Bachelor of Computer Science, <br /> International Islamic
               University Islamabad
             </div>
-            <p className=" font-poppins text-base w-full text-primary  max-sm:text-xs">
+            <p className=" font-poppins text-xl w-full text-primary  max-sm:text-xs">
               I hold a Computer Science Degree from the International Islamic
               University Islamabad. My academic journey equipped me with a
               strong foundation in problem-solving, creative thinking, and

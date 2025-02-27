@@ -6,7 +6,7 @@ import DownLoadResumeBtn from "@/components/DownLoadResumeBtn";
 import FramerWrapper from "@/components/animation/FramerWrapper";
 
 export const siteConfig = {
-  name: "Md Taqui Imam",
+  name: "Abdullatif Nizamani",
   description: "I am a Passionate Software Engineer",
   ogImage: "https://abdullatifnizamani.com/og-image.png",
   url: "https://abdullatifnizamani.com",

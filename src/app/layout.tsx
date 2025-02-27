@@ -16,7 +16,7 @@ const rubik = Rubik({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://abdullatifnizamani.com"),
+  metadataBase: new URL("https://www.abdullatifnizamani.com"),
   title: {
     default: siteConfig.name,
     template: `%s - Software Engineer`,

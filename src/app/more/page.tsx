@@ -27,6 +27,12 @@ const morePage = () => {
         "I am working on different projects at code for pakistan, the organization works for civic tech, Bridging the Gap Between Government and Citizens",
       link: "https://codeforpakistan.org/",
     },
+    {
+      title: "Design System",
+      description:
+        "All Pakistan Government Digital Design System for Web and Mobile Applications, An open source-design system by Code for Pakistan.",
+      link: "https://nizam.codeforpakistan.org/",
+    },
   ];
 
   return (

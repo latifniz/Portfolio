@@ -20,8 +20,30 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
+            # Navigate to the app directory
             cd apps/Portfolio/
+
+            # Pull the latest changes from GitHub
             git pull origin main
+
+            # Ensure Node.js and npm are installed
+            if ! command -v node &> /dev/null; then
+              echo "Node.js is not installed. Installing Node.js..."
+              curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
+              sudo apt-get install -y nodejs
+            fi
+
+            # Ensure PM2 is installed
+            if ! command -v pm2 &> /dev/null; then
+              echo "PM2 is not installed. Installing PM2..."
+              sudo npm install -g pm2
+            fi
+
+            # Install dependencies
             npm install
+
+            # Build the app
             npm run build
+
+            # Restart the PM2 process
             pm2 restart next-portfolio

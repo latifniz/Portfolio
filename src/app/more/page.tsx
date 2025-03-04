@@ -18,19 +18,19 @@ const morePage = () => {
     {
       title: "Tutor and Mentor",
       description:
-        "I am teaching a mentoring students in paper airplane's women in tech program. the orgnization works for empowering war affected students",
+        "I am mentoring students in Paper Airplanes' Women in Tech program. The organization works to empower war-affected students.",
       link: "https://www.paper-airplanes.org/",
     },
     {
-      title: "Volunteer Engineer ",
+      title: "Volunteer Engineer",
       description:
-        "I am working on different projects at code for pakistan, the organization works for civic tech, Bridging the Gap Between Government and Citizens",
+        "I am working on various projects at Code for Pakistan, an organization focused on civic tech, bridging the gap between government and citizens.",
       link: "https://codeforpakistan.org/",
     },
     {
       title: "Design System",
       description:
-        "All Pakistan Government Digital Design System for Web and Mobile Applications, An open source-design system by Code for Pakistan.",
+        "All Pakistan Government Digital Design System for Web and Mobile Applications. An open-source design system by Code for Pakistan.",
       link: "https://nizam.codeforpakistan.org/",
     },
   ];

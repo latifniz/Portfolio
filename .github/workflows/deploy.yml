@@ -20,24 +20,22 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
+            # Load nvm
+            export NVM_DIR="$HOME/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+            # Use Node.js v22.13.1
+            nvm use v22.13.1
+
+            # Debugging: Print Node.js and npm versions
+            echo "Node.js version: $(node -v)"
+            echo "npm version: $(npm -v)"
+
             # Navigate to the app directory
             cd apps/Portfolio/
 
             # Pull the latest changes from GitHub
             git pull origin main
-
-            # Ensure Node.js and npm are installed
-            if ! command -v node &> /dev/null; then
-              echo "Node.js is not installed. Installing Node.js..."
-              curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
-              sudo apt-get install -y nodejs
-            fi
-
-            # Ensure PM2 is installed
-            if ! command -v pm2 &> /dev/null; then
-              echo "PM2 is not installed. Installing PM2..."
-              sudo npm install -g pm2
-            fi
 
             # Install dependencies
             npm install

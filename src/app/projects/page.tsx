@@ -12,7 +12,7 @@ const projectsPage = () => {
       description: `YourDrive let you use your personal github account as full blown cloud storage,
        where you can create folders, upload files with no max storage limits, it's just a fun project .`,
       tags: ["NodeJS", "Express", "PostgreSQL", "GitHub"],
-      link: "https://abdullatifnizamani.com/yourdrive/api/v1/docs",
+      link: "https://yourdrive.abdullatifnizamani.com/api/v1/docs",
     },
 
     {
@@ -30,14 +30,14 @@ const projectsPage = () => {
         foster meaningful interactions, and create a more engaging university experience.
        (Currently under Development)`,
       tags: ["Nextjs", "Typescript", "Social Media", "University"],
-      link: "https://abdullatifnizamani.com/connectiiu",
+      link: "https://connectiiu.abdullatifnizamani.com/",
     },
     {
       title: "FileCraft - UI for the yourDrive API",
       description:
         "FileCraft Is A UI that uses the yourDrive API and Lets you use github as personal cloud storage, it's a fun project - (Currently under Devlelopment) ",
       tags: ["React", "Github", "Cloud Storage", "Drive"],
-      link: "https://abdullatifnizamani.com/filecraft",
+      link: "https://filecraft.abdullatifnizamani.com/",
     },
     {
       title: "ThroughMyEyes - A Personal Blog App ",
@@ -45,7 +45,17 @@ const projectsPage = () => {
          It’s a creative space where I explore diverse topics, 
         from imaginative tales to tech trends and everyday experiences.`,
       tags: ["React", "MongoDB", "Blog"],
-      link: "https://abdullatifnizamani.com/blog",
+      link: "https://blog.abdullatifnizamani.com/",
+    },
+    {
+      title: "Secretly - A Secure Messaging App",
+      description: `Secretly is a private messaging app designed for secure
+       and secret communication. Built for those who value privacy, 
+       it allows users to send messages without leaving a trace. The app is deployed
+        privately and shared only with trusted individuals, making it a tool for 
+        disappearing from the internet while staying connected with your inner circle.`,
+      tags: ["Nextjs", "Pusher", "Prisma", "MongoDB"],
+      link: "https:secretly.abdullatifnizamani.com/",
     },
   ];
 

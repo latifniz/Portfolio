@@ -28,14 +28,31 @@ export const SendEmail = async (formdata: FormData) => {
     },
   });
 
-  // Send email
-  await transporter.sendMail({
+  // Send email to user
+  const sendUserEmailPromise = transporter.sendMail({
     from: email,
     to: SenderEmail.toString(),
-    subject: `${name} from Contact Form`,
+    subject: `Your Message Has Been Recived`,
     replyTo: email,
-    text: `Sender Email: ${SenderEmail.toString()}\n\n${message}`,
+    text: `
+    Thanks for contacting me, ${name}.
+    I have received your message: "${message}"
+    I will review it and get back to you soon.
+    Best regards,  
+    Abdullatif Nizamani  `,
   });
+  //send email to my self
+  const sendEmailToMePromoise = transporter.sendMail({
+    from: email,
+    to: "abdullatifnizamani517@gmail.com",
+    subject: `New Messsage From ${name}`,
+    replyTo: SenderEmail.toString(),
+    text: `
+    you have new message from ${name}.
+    the message \n "${message}"  `,
+  });
+
+  await Promise.all([sendUserEmailPromise, sendEmailToMePromoise]);
 
   return redirect("/");
 };

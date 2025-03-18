@@ -48,14 +48,14 @@ const projectsPage = () => {
       link: "https://blog.abdullatifnizamani.com/",
     },
     {
-      title: "Secretly - A Secure Messaging App",
-      description: `Secretly is a private messaging app designed for secure
+      title: "Gossipy - A Secure Messaging App",
+      description: `Gossipy is a private messaging app designed for secure
        and secret communication. Built for those who value privacy, 
        it allows users to send messages without leaving a trace. The app is deployed
         privately and shared only with trusted individuals, making it a tool for 
         disappearing from the internet while staying connected with your inner circle.`,
       tags: ["Nextjs", "Pusher", "Prisma", "MongoDB"],
-      link: "https:secretly.abdullatifnizamani.com/",
+      link: "https:gossipy.abdullatifnizamani.com/",
     },
   ];
 

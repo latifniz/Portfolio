@@ -55,7 +55,7 @@ const projectsPage = () => {
         privately and shared only with trusted individuals, making it a tool for 
         disappearing from the internet while staying connected with your inner circle.`,
       tags: ["Nextjs", "Pusher", "Prisma", "MongoDB"],
-      link: "https:gossipy.abdullatifnizamani.com/",
+      link: "https://gossipy.abdullatifnizamani.com/",
     },
   ];
 
